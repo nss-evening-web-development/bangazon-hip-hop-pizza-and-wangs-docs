@@ -125,5 +125,4 @@ Before finalizing the Minimum Viable Product (MVP) for the project, it is essent
   - [ ] Maintain consistency in views, cards, fonts, sizes, and other design elements.
   - [ ] If you use images in your application, ensure they are resized, if needed, for display in the UI, and the correct ratio is maintained.
 
-By completing this ticket and verifying that your project meets all the Student Assessment requirements,
-
+By completing this ticket and verifying that your project meets all the Student Assessment Requirements, you ensure that your project is ready for evaluation and meets the necessary criteria for successful completion.
