@@ -14,7 +14,7 @@ Please read through these ticket descriptions to fully comprehend the client's i
 
 - **Given**: A cashier accessing the POS system.
 - **When**: They attempt to log in.
-- **Then**: They should be authenticated using their email and password, ensuring only authorized cashiers can access the system.
+- **Then**: They should be authenticated using firebase.
   - When your user is **logged out**:
      - They should NOT see the navbar.
      - They should see either an h1 or the Logo on the page that says Hip Hop Pizza and Wings
