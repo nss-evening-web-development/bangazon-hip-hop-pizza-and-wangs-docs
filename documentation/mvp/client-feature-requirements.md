@@ -28,13 +28,25 @@ They're looking for a POS (point of sale) application tailored for tablet device
 
 ## **MVP Features**
 
-Alright, let's break down what they're looking for:
+The MVP for the POS system for **Hip Hop, Pizza, and Wangs** will include the following key features, refined to align with our detailed discussions and ticket descriptions:
 
-- **User Authentication**: They want their staff to log in securely.
-- **Menu Display**: A digital menu where customers can view items, prices, and descriptions.
-- **Order Management**: A system to place, edit, and track orders.
-- **Payment Integration**: They're keen on having multiple payment options, including credit cards and digital wallets.
-- **Feedback System**: A platform where customers can leave reviews and ratings.
+1. **User Authentication**: Secure login for staff using Firebase Auth to ensure authorized access to the POS system.
+2. **Home Screen Display**: A welcoming interface post-login, offering options to view and create orders, and check revenue.
+3. **Comprehensive Order Management**:
+   - **View All Orders**: Access to a detailed list of all orders.
+   - **Order Details and Associated Items**: Ability to view specific details and items for each order.
+   - **Create and Update Orders**: Functionality to add new orders and modify existing ones, including customer details and order type.
+   - **Delete Orders and Order Items**: Options to remove orders or specific items from the system.
+4. **Order Item Management**:
+   - **Add Order Items**: Capability to include new items to orders. While adding items to an order, menu items will be displayed for selection. However, there will be no functionality for creating, editing, or deleting menu items available to the cashier.
+   - **Update and Delete Order Items**: Update details like name and price of order items, and remove specific items from an order.
+5. **Closing and Revenue Tracking**:
+   - **Close Order with Restrictions**: Feature to finalize orders with payment type and tip amount, changing order status from "Open" to "Closed".
+   - **Revenue Node Addition**: Automatic creation of a revenue node upon order closure, capturing essential financial details.
+   - **View Total Revenue**: Ability to view the cumulative revenue generated.
+6. **Feedback System**: A platform for customers to leave reviews and ratings, enhancing the customer experience.
+
+These features are designed to streamline the order process, enhance customer interaction, and provide a comprehensive overview of the business's financial health, with specific attention to the management of order items and revenue tracking.
 
 ## **Next Steps**
 
