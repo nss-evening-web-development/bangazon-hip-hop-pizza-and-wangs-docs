@@ -26,27 +26,30 @@ Since the 2020 pandemic, they've adapted to the new normal by offering call-in o
 
 They're looking for a POS (point of sale) application tailored for tablet devices. This will help streamline their order process and enhance customer experience. And the best part? We get to build it!
 
-## **MVP Features**
+# **MVP Features**
 
-The MVP for the POS system for **Hip Hop, Pizza, and Wangs** will include the following key features, refined to align with our detailed discussions and ticket descriptions:
+The MVP for the POS system for **Hip Hop, Pizza, and Wangs** includes the following key features, designed to meet the client's specific needs:
 
-1. **User Authentication**: Secure login for staff using Firebase Auth to ensure authorized access to the POS system.
-2. **Home Screen Display**: A welcoming interface post-login, offering options to view and create orders, and check revenue.
+1. **User Authentication**: Staff will log in securely using Firebase Authentication, ensuring a reliable and secure access system.
+
+2. **Home Screen Display**: After logging in, staff will be greeted with a user-friendly interface offering options to view and create orders, and check revenue.
+
 3. **Comprehensive Order Management**:
-   - **View All Orders**: Access to a detailed list of all orders.
+   - **View All Orders**: Staff can access a detailed list of all orders.
    - **Order Details and Associated Items**: Ability to view specific details and items for each order.
    - **Create and Update Orders**: Functionality to add new orders and modify existing ones, including customer details and order type.
    - **Delete Orders and Order Items**: Options to remove orders or specific items from the system.
+
 4. **Order Item Management**:
-   - **Add Order Items**: Capability to include new items to orders. While adding items to an order, menu items will be displayed for selection. However, there will be no functionality for creating, editing, or deleting menu items available to the cashier.
-   - **Update and Delete Order Items**: Update details like quantity, and remove specific items from an order.
+   - **Add Order Items**: Staff can add items to orders from a menu that is viewable but not modifiable. Each "order item" represents a selection of a menu item for a particular order.
+   - **Delete Order Items**: Remove specific items from an order.
+
 5. **Closing and Revenue Tracking**:
    - **Close Order with Restrictions**: Feature to finalize orders with payment type and tip amount, changing order status from "Open" to "Closed".
-   - **Revenue Node Addition**: Automatic creation of a revenue node upon order closure, capturing essential financial details.
+   - **Revenue Node Addition**: Automatic creation of a record capturing essential financial details upon order closure.
    - **View Total Revenue**: Ability to view the cumulative revenue generated.
-6. **Feedback System**: A platform for customers to leave reviews and ratings, enhancing the customer experience.
 
-These features are designed to streamline the order process, enhance customer interaction, and provide a comprehensive overview of the business's financial health, with specific attention to the management of order items and revenue tracking.
+These features are designed to streamline the order process, enhance customer interaction, and provide a comprehensive overview of the business's financial health. The system is user-friendly, focusing on efficient order management and customer satisfaction.
 
 ## **Next Steps**
 
