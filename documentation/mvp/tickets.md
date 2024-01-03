@@ -55,6 +55,19 @@ Please read through these ticket descriptions to fully comprehend the client's i
 
 ---
 
+### **Update Order Details**
+
+- **Given**: An authenticated cashier.
+- **When**: They want to modify details of an existing order.
+- **Then**: 
+    - They should be able to update the following information on the selected order:
+        - Order Name
+        - Customer Phone Number
+        - Customer Email Address
+        - Order Type
+
+---
+
 ### **Delete Orders**
 
 - **Given**: An authenticated cashier.  
