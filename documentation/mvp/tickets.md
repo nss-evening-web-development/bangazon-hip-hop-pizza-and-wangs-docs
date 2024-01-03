@@ -55,19 +55,6 @@ Please read through these ticket descriptions to fully comprehend the client's i
 
 ---
 
-### **Update Order Details**
-
-- **Given**: An authenticated cashier.
-- **When**: They want to modify details of an existing order.
-- **Then**: 
-    - They should be able to update the following information on the selected order:
-        - Order Name
-        - Customer Phone Number
-        - Customer Email Address
-        - Order Type
-
----
-
 ### **Delete Orders**
 
 - **Given**: An authenticated cashier.  
@@ -97,6 +84,19 @@ Please read through these ticket descriptions to fully comprehend the client's i
 - **Given**: An authenticated cashier
 - **When**: They want to add an item to an existing order.
 - **Then**: They should be able to select an item from a read-only menu and add it to the order. The same item can be added multiple times to the same order.
+
+---
+
+### **Update Order Details**
+
+- **Given**: An authenticated cashier.
+- **When**: They want to modify details of an existing order.
+- **Then**: 
+    - They should be able to update the following information on the selected order:
+        - Order Name
+        - Customer Phone Number
+        - Customer Email Address
+        - Order Type
 
 ---
 
