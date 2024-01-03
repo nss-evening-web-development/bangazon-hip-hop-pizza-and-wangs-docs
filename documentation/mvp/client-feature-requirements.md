@@ -39,7 +39,7 @@ The MVP for the POS system for **Hip Hop, Pizza, and Wangs** will include the fo
    - **Delete Orders and Order Items**: Options to remove orders or specific items from the system.
 4. **Order Item Management**:
    - **Add Order Items**: Capability to include new items to orders. While adding items to an order, menu items will be displayed for selection. However, there will be no functionality for creating, editing, or deleting menu items available to the cashier.
-   - **Update and Delete Order Items**: Update details like name and price of order items, and remove specific items from an order.
+   - **Update and Delete Order Items**: Update details like quantity, and remove specific items from an order.
 5. **Closing and Revenue Tracking**:
    - **Close Order with Restrictions**: Feature to finalize orders with payment type and tip amount, changing order status from "Open" to "Closed".
    - **Revenue Node Addition**: Automatic creation of a revenue node upon order closure, capturing essential financial details.
