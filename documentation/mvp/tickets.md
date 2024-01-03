@@ -14,11 +14,12 @@ Please read through these ticket descriptions to fully comprehend the client's i
 
 - **Given**: A cashier accessing the POS system.
 - **When**: They attempt to log in.
-- **Then**: They should be authenticated using firebase.
+- **Then**: They should be authenticated using Firebase.
   - When your user is **logged out**:
      - They should NOT see the navbar.
      - They should see either an h1 or the Logo on the page that says Hip Hop Pizza and Wings
      - A button to login
+
 ---
 
 ### **Home Screen Display**
@@ -37,7 +38,7 @@ Please read through these ticket descriptions to fully comprehend the client's i
 
 ---
 
-### **Order Details and Associated Items**
+### **Order Details and Items Added to the Order**
 
 - **Given**: An authenticated cashier.  
 - **When**: They click on a specific order to view its details.  
@@ -48,9 +49,9 @@ Please read through these ticket descriptions to fully comprehend the client's i
         - Customer Phone Number
         - Customer Email Address
         - Order Type (either "phone" or "in-person")
-    - They should also see a list of all the order items associated with the selected order. Each item should display:
-        - Order Item Name
-        - Order Item Price
+    - They should also see a list of all items added to the selected order, with each item displaying:
+        - Item Name
+        - Item Price
 
 ---
 
@@ -58,15 +59,15 @@ Please read through these ticket descriptions to fully comprehend the client's i
 
 - **Given**: An authenticated cashier.  
 - **When**: They decide to delete an order.  
-- **Then**: The selected order should be removed from the system, and all associated order items should also be deleted.  
+- **Then**: The selected order should be removed from the system. Additionally, the links between this order and its items should be removed, but the items themselves will still exist in the database.
 
 ---
 
-### **Delete Order Items**
+### **Delete an Item from an Order**
 
 - **Given**: An authenticated cashier.  
-- **When**: They decide to delete a specific order item from an order.  
-- **Then**: The selected order item should be removed from the system.  
+- **When**: They decide to delete a specific item from an order.  
+- **Then**: The selected item should be removed from the order.  
 
 ---
 
@@ -78,35 +79,11 @@ Please read through these ticket descriptions to fully comprehend the client's i
 
 ---
 
-### **Add Order Items**
+### **Add an Item to an Order**
 
 - **Given**: An authenticated cashier
-- **When**: They want to add items to an existing order.
-- **Then**: They should be able to input the necessary details for the order item and associate it with the selected order.  
-
----
-
-### **Update Order Details**
-
-- **Given**: An authenticated cashier
-- **When**: They want to modify details of an existing order.  
-- **Then**: 
-    - They should be able to update the following information on the selected order:
-        - Order Name
-        - Customer Phone Number
-        - Customer Email Address
-        - Order Type
-
----
-
-### **Update Order Items**
-
-- **Given**: An authenticated cashier.  
-- **When**: They want to modify details of an order item associated with an order.  
-- **Then**: 
-    - They should be able to update the following information on the selected order item:
-        - Item Name
-        - Item Price
+- **When**: They want to add an item to an existing order.
+- **Then**: They should be able to select an item from a read-only menu and add it to the order. The same item can be added multiple times to the same order.
 
 ---
 
@@ -129,12 +106,13 @@ Please read through these ticket descriptions to fully comprehend the client's i
 - **Given**: An authenticated cashier
 - **When**: They close an order.  
 - **Then**: 
-    - A new revenue node is created capturing:
+    - A new revenue record is created capturing:
         - Total Order Amount (including tip)
         - Date of the order closure
         - Payment Type
         - Tip Amount
         - Order Type
+
 ---
 
 ### **View Total Revenue**
